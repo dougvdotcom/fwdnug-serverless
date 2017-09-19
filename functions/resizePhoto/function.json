@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "inputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "upload/{name}",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "uploadthumb/{name}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "inout"
+    }
+  ],
+  "disabled": false
+}

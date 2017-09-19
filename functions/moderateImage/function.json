@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "inputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "uploadthumb/{name}",
+      "connection": "AzureWebJobsStorage"
+    }
+  ],
+  "disabled": false
+}
